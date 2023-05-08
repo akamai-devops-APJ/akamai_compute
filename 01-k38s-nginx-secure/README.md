@@ -73,3 +73,21 @@ Update the hostnames. E.g.
   rules:
   - host: www.alakhani.net
   ```
+
+  **terraform.tfvars**
+
+  Update `token=""` with a valid linode access token.
+
+  **Initialise, Plan and Apply Terraform**
+
+  On your root folder terminal, run
+
+  ``` terraform init ```
+
+  And then run
+
+  ```terraform plan```
+
+  Execute terraform apply to deploy and initialise K38s Cluster on Linode
+
+  ```terraform apply -auto-approve```
