@@ -124,12 +124,17 @@ CURRENT   NAME            CLUSTER     AUTHINFO          NAMESPACE
 this validates you have a cluster running and kubeconfig file is valid.
 
 ```kubectl get nodes```
+
 ```kubectl create -f hello-one.yaml // deploy hello-one web application```
+
 ```kubectl get svc // validate service is running```
+
 Install the NGINX Ingress Controller using helm (skip if you already have)
 ```helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx```
+
 Install the NGINX Ingress Controller. This installation will result in a Linode NodeBalancer being created.
 ```helm install ingress-nginx ingress-nginx/ingress-nginx```
+
 Find NodeBalancer External IP
 ```kubectl --namespace default get services -o wide -w ingress-nginx-controller```
 
