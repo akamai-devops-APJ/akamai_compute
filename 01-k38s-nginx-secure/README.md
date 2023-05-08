@@ -1,4 +1,5 @@
-# ![Alt text](https://user-images.githubusercontent.com/25181517/183345121-36788a6e-5462-424a-be67-af1ebeda79a2.png "Optional title")
+# <img src="https://user-images.githubusercontent.com/25181517/183345121-36788a6e-5462-424a-be67-af1ebeda79a2.png" width="35" height="35"> Akamai compute K38s secure
+
 
 ## Akamai compute K38s secure 
 
