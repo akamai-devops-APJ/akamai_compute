@@ -31,4 +31,6 @@ Thereafter, Update DNS A records with your hostname with Linode NodeBalancer ext
 
 ``` git clone https://github.com/akamai-devops-APJ/akamai_compute.git```
 
+changedir to ```cd akamai_compute/01-k38s-nginx-secure/```
 
+### Update configuration values as per your requirement
