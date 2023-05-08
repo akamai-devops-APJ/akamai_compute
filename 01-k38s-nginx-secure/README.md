@@ -110,7 +110,7 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
   ## PART II
 > Until now, you will have a K38s cluster running on Linode. Next steps involve deploying web-app and create a bunch of services to make the application running securely with valid production DV certificate.
 
-**Kube config**
+**Deploy web-app and create ingress controller to route traffic**
 
 At this stage, you will see a `kubeconfig.yaml` generated under .kube folder. 
 
@@ -146,3 +146,9 @@ Once your Ingress Controller is installed and DNS records have been created poin
 Create an Ingress resource manifest file named `my-new-ingress.yaml`
 
 ```kubectl create -f my-new-ingress.yaml```
+
+**HTTPS**
+
+**Install cert-manager**
+
+```kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml```
