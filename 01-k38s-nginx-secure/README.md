@@ -38,6 +38,8 @@ changedir to ```cd akamai_compute/01-k38s-nginx-secure/```
 > **Note**
 > the template is defaulted to production certificate validation settings. Suggest to first test it with Lets Encrypt staging.
 
+**certificate-production.yaml**
+
 Edit and save the following values `commonName`, `dnsNames` in certificate-production.yaml to your hostname.
 e.g.
   ```
@@ -45,3 +47,29 @@ e.g.
   dnsNames:
   - www.alakhani.net
 ```
+
+**cluster-issuer-production.yaml**
+
+Before you begin issuing certificates, you must configure at least one `Issuer` or `ClusterIssuer` resource in your cluster. Note when you are running cert related steps, It may take a minute or so for the TLS assets required for the webhook to function to be provisioned.
+
+Update correct email address and validate the name set to staging/production. Enter valid email as this is required for the system to send expiry notifications.
+```
+    email: <YOUR EMAIL ID>
+    privateKeySecretRef:
+      name: letsencrypt-production
+```      
+
+**my-new-ingress.yaml**
+
+Ingress Controller (NGINX) is an entry point that sits in front of multiple services in the cluster. It can be defined as a collection of routing rules that govern how external users access services running inside a Kubernetes cluster.
+
+Update the hostnames. E.g.
+
+```
+  tls:
+  - hosts:
+      - www.alakhani.net
+    secretName : ssl-cert-production
+  rules:
+  - host: www.alakhani.net
+  ```
