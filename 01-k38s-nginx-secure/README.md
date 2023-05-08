@@ -130,15 +130,19 @@ this validates you have a cluster running and kubeconfig file is valid.
 ```kubectl get svc // validate service is running```
 
 Install the NGINX Ingress Controller using helm (skip if you already have)
+
 ```helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx```
 
 Install the NGINX Ingress Controller. This installation will result in a Linode NodeBalancer being created.
+
 ```helm install ingress-nginx ingress-nginx/ingress-nginx```
 
 Find NodeBalancer External IP
+
 ```kubectl --namespace default get services -o wide -w ingress-nginx-controller```
 
 Once your Ingress Controller is installed and DNS records have been created pointing to your NodeBalancer, you need to create a manifest file to create a new Ingress resource. This resource will define how traffic coming from the LoadBalancer service we deployed earlier is handled. In this case, NGINX will accept these connections over port 80, diverting traffic to both of our services via their `hostname` or domain names:
 
 Create an Ingress resource manifest file named `my-new-ingress.yaml`
+
 ```kubectl create -f my-new-ingress.yaml```
