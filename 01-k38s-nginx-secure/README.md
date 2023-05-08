@@ -34,3 +34,14 @@ Thereafter, Update DNS A records with your hostname with Linode NodeBalancer ext
 changedir to ```cd akamai_compute/01-k38s-nginx-secure/```
 
 ### Update configuration values as per your requirement
+
+> **Note**
+> the template is defaulted to production certificate validation settings. Suggest to first test it with Lets Encrypt staging.
+
+Edit and save the following values `commonName`, `dnsNames` in certificate-production.yaml to your hostname.
+e.g.
+  ```
+  commonName: www.alakhani.net
+  dnsNames:
+  - www.alakhani.net
+```
