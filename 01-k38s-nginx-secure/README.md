@@ -151,4 +151,14 @@ Create an Ingress resource manifest file named `my-new-ingress.yaml`
 
 **Install cert-manager**
 
+Install cert-manager, create cluster-issuer and check if they are available. Give it sometime for it to be READY.
+
 ```kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml```
+
+```kubectl apply -f cluster-issuer-production.yaml```
+
+```kubectl get clusterissuer```
+
+
+
+

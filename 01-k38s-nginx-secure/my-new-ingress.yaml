@@ -8,7 +8,7 @@ spec:
   tls:
   - hosts:
       - www.alakhani.net
-    secretName : ssl-cert-staging
+    secretName : ssl-cert-production
   rules:
   - host: www.alakhani.net
     http:
