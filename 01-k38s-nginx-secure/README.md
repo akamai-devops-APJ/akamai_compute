@@ -159,6 +159,19 @@ Install cert-manager, create cluster-issuer and check if they are available. Giv
 
 ```kubectl get clusterissuer```
 
+```
+nlakhani@sin-mpse4 01-k38s-nginx-secure % kubectl get clusterissuer
+NAME                     READY   AGE
+letsencrypt-production   True    16s
+```
+
+Deploy and verify certificate deployment
+
+```kubectl apply -f certificate-production.yaml```
+
+```kubectl get certificates```
+
+
 
 
 
