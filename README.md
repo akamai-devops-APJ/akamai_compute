@@ -1,6 +1,7 @@
 # Akamai Compute
 
-This repo contains code examples on Akamai Compute (Linode).
+- Unofficial Akamai Compute automation projects
+- This repo contains code examples on Akamai Compute (Linode).
 
 ## Quick start
 
