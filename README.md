@@ -16,4 +16,4 @@ Akamai computer K38s secure is a Kubernetes cluster deployed using Linode terraf
 
 I created this project to fill a personal need to provide users with easy way to accomplish onboarding and management tasks on Akamai compute. While there are advance options they are optional and the project should be as simple as possible so that the barrier for entry is super duper low.
 
-<img width="532" alt="buymecoffee" src="https://github.com/akamai-devops-APJ/akamai_compute/assets/73431376/6ac048f3-e416-4feb-9a50-70a266d64fca">
+<img width="300" alt="buymecoffee" src="https://github.com/akamai-devops-APJ/akamai_compute/assets/73431376/8435b2b4-2a70-4237-bbb2-2cf37e62f9c9">
