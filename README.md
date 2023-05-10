@@ -1,7 +1,8 @@
 # Akamai Compute
 
 - Unofficial Akamai Compute automation projects
-- This repo contains code examples on Akamai Compute (Linode).
+- Fully self serviceable
+- This repo contains code examples on Akamai Compute (Linode)
 
 ## Quick start
 
