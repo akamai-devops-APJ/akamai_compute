@@ -2,7 +2,7 @@
 
 This repo contains code examples on Akamai Compute (Linode).
 
-# Goal
+## Goal
 
 I created this project to fill a personal need to provide users with easy way to accomplish onboarding and management tasks on Akamai compute. While there are advance options they are optional and the project should be as simple as possible so that the barrier for entry is super duper low.
 
